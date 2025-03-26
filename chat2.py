@@ -26,8 +26,8 @@ def predict_species(te, hu, material, state, condition):
     st.write("Prediction with new data:", prediction)
 
 if __name__ == "__main__":
-    st.title('Penguin Species Prediction with Decision Tree Model 2025')
-    st.image('penguin.png')
+    st.title('Shelf Life Prediction for Packaging using MLOps')
+    st.image('shelfnew.png')
     storage_temp = get_storage_temp()
     storage_humid = get_storage_humid()
     material_type = get_material_type()
