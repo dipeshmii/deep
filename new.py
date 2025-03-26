@@ -18,7 +18,7 @@ def get_storage_condition():
     return st.radio("Storage Condition", ["Chilled", "Refrigerated", "Ambient"])
 
 def predict_shelf_life(temp, humid, material, state, condition):
-    loaded_model = pickle.load(open('/mnt/data/proj.pkl', 'rb'))
+    loaded_model = pickle.load(open('proj.pkl', 'rb'))
     
     # One-hot encoding for categorical inputs
     material_types = ["Glass", "HDPE", "PET", "PLA", "Paperboard", "Aluminium"]
